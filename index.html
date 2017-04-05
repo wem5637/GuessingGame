@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+</head>
+
+<body>
+    <div id='app' class='container center'>
+        <div id='headers'>
+            <!-- Title and subtitles! -->
+            <h1>Use the Power of Your Inner Eye!</h1>
+            <h2>Which number do you see? (1-100)</h2>
+        </div>
+        <div id='main'>
+            <div id='input-parent'>
+                <input id='player-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+                <button id='submit' class='btn btn-success'>Go!</button>
+            </div>
+            <div id='guesses'>
+                <ul id='guess-list'>
+                    <li class='guess'>-</li>
+                    <li class='guess'>-</li>
+                    <li class='guess'>-</li>
+                    <li class='guess'>-</li>
+                    <li class='guess'>-</li>
+                </ul>
+            </div>
+            <div id="menu-btns">
+                <!-- reset and hint buttons -->
+                <button id='reset' class='btn btn-warning'>Reset</button>
+                <button id='hint' class='btn btn-info'>Hint</button>
+            </div>
+        </div>
+    </div>
+    <div id='footer' class='center'>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <img src='fa-logo@2x.png'></img>
+            </div>
+            <div class='col-sm-4'>
+                <h4>Project by Will McCracken</h4>
+            </div>
+            <div class='col-sm-4'>
+                <img src='grace_hopper_academy.png'></img>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="jquery-3.2.0.js"></script>
+<script src="GuessingGame.js"></script>
+
+
+</html>
